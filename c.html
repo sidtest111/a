@@ -1,0 +1,11 @@
+<h2>Form Result</h2>
+<p id="output"></p>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get("name");
+    const email = params.get("email");
+
+    document.getElementById("output").innerText =
+        `Name: ${name}, Email: ${email}`;
+</script>
